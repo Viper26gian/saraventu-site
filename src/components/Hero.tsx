@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { MessageCircle, ChevronDown } from 'lucide-react';
-import { useIsMobile } from '../hooks/use-mobile';
 
 const Hero = () => {
-  const isMobile = useIsMobile();
-  const [videoReady, setVideoReady] = useState(false);
-  const videoId = '4h9acxnLVqU';
   const wa = 'https://wa.me/393477235208?text=' + encodeURIComponent("Hi! I found you on saraventu.it and I'd like to book a sailing experience.");
-
-  useEffect(() => {
-    const t = setTimeout(() => setVideoReady(true), 1200);
-    return () => clearTimeout(t);
-  }, []);
 
   return (
     <section className="relative min-h-screen w-full flex items-end overflow-hidden">
       <div className="absolute inset-0">
         <img src="/lovable-uploads/DSC02206.jpg" alt="Sailing in Sicily" className="w-full h-full object-cover object-center" fetchpriority="high" />
-        {videoReady && !isMobile && (
-          <iframe
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&rel=0&modestbranding=1&playsinline=1`}
-            className="absolute top-1/2 left-1/2 w-[320%] h-[320%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            allow="autoplay; encrypted-media" frameBorder="0" title="Saraventu reel" aria-hidden="true"
-          />
-        )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2A] via-[#0D1B2A]/30 to-transparent" />
       </div>
 
@@ -78,4 +62,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;

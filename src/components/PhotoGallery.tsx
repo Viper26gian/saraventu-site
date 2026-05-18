@@ -2,18 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 
 const photos = [
-  { src: "/lovable-uploads/DSC01915.jpg",  alt: "Guest enjoying the sail" },
-  { src: "/lovable-uploads/DSC02197.jpg",  alt: "At the helm of Gibigiana" },
-  { src: "/lovable-uploads/DSC02251.jpg",  alt: "Skipper and crew laughing" },
-  { src: "/lovable-uploads/DSC01946.jpg",  alt: "Couple on board" },
-  { src: "/lovable-uploads/DSC02399.jpg",  alt: "Guests at the bow" },
-  { src: "/lovable-uploads/Image_1.png",   alt: "Blue Sicilian sea" },
-  { src: "/lovable-uploads/Image_2.png",   alt: "Swimming stop at Aci Trezza" },
-  { src: "/lovable-uploads/Image_3.jpg",   alt: "Group on the floating mat" },
-  { src: "/lovable-uploads/DSC02042.jpg",  alt: "Aci Castello from the sea" },
-  { src: "/lovable-uploads/DSC02206.jpg",  alt: "Golden hour Aci Trezza" },
-  { src: "/lovable-uploads/Image_6.png",   alt: "Aperitivo spritz on deck" },
-  { src: "/lovable-uploads/DSC02084.jpg",  alt: "Floating rings in the sea" },
+  { src: "/lovable-uploads/20250801_192926.jpg", alt: "Sailing under Sicilian sun" },
+  { src: "/lovable-uploads/Image_4.png", alt: "Coastal views" },
+  { src: "/lovable-uploads/Image_5.png", alt: "Sicily by sea" },
+  { src: "/lovable-uploads/IMG-20250808-WA0039.jpg", alt: "Aboard Gibigiana" },
+  { src: "/lovable-uploads/DSC02399.jpg", alt: "Guests at the bow" },
+  { src: "/lovable-uploads/Image_1.png", alt: "Blue Sicilian sea" },
+  { src: "/lovable-uploads/Image_2.png", alt: "Swimming stop at Aci Trezza" },
+  { src: "/lovable-uploads/Image_3.jpg", alt: "Group on the floating mat" },
+  { src: "/lovable-uploads/DSC02042.jpg", alt: "Aci Castello from the sea" },
+  { src: "/lovable-uploads/DSC02206.jpg", alt: "Golden hour Aci Trezza" },
+  { src: "/lovable-uploads/Image_6.png", alt: "Aperitivo spritz on deck" },
+  { src: "/lovable-uploads/DSC02084.jpg", alt: "Floating rings in the sea" },
 ];
 
 const PhotoGallery = () => {

@@ -1,0 +1,252 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* YouTube video iframe responsiveness */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile hero video optimization */
+@media (max-width: 768px) {
+  .hero-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .hero-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Performance optimized animations */
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Animated gradient animation */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 5s ease infinite;
+}
+
+/* Accent color effects - updated to marine blue */
+.text-accent-hover:hover {
+  color: #2A92D8;
+  transition: color 0.3s ease;
+}
+
+.border-accent-hover:hover {
+  border-color: #2A92D8;
+  transition: border-color 0.3s ease;
+}
+
+/* Marine blue accent link highlight */
+.accent-link {
+  position: relative;
+}
+
+.accent-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #2A92D8;
+  transition: width 0.3s ease;
+}
+
+.accent-link:hover:after {
+  width: 100%;
+}
+
+/* Accent badge - updated color */
+.accent-badge {
+  background-color: #2A92D8;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Organic image frame styles */
+.organic-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.organic-image-container::before {
+  content: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  /* Fix spacing for mobile headings and content */
+  .mobile-spacing > * {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Push content below fixed navbar - modified by JS on mobile */
+body {
+  padding-top: 4rem;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove bottom spacing */
+}
+
+/* Ensure all buttons are easily tappable on mobile - increased to 48px */
+button, 
+a.btn, 
+[role="button"], 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons with turquoise hover effect */
+.btn-turquoise-hover:hover {
+  background-color: #00B3B3;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid #2ECAD5;
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Modern image styling */
+.modern-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Buttons with marine blue hover effect */
+.btn-marine-hover:hover {
+  background-color: #2A92D8;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid #2A92D8;
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Modern image styling */
+.modern-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Updated color variables */
+:root {
+  --saraventu-accent: #2A92D8;
+  --saraventu-accent-hover: #1E80C1;
+  --saraventu-accent-secondary: #00998E;
+}

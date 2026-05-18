@@ -1,0 +1,16 @@
+{
+  "name": "Saraventu - Sailing Catania & Yacht Charter Sicily",
+  "short_name": "Saraventu",
+  "description": "Premium sailing experiences and boat tours in Catania, Sicily",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#38A0ED",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

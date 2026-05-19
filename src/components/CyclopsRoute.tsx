@@ -4,7 +4,7 @@ const stops = [
   {
     name: 'BLU MARINA SRL,\nCATANIA',
     sub: 'Starting and return point.',
-    img: '/lovable-uploads/DSC02084.jpg',
+    img: '/lovable-uploads/gibigiana-marina.jpg',
     note: null,
     noteImg: null,
   },

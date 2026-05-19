@@ -5,14 +5,14 @@ const stops = [
   {
     name: 'BLU MARINA SRL,\nCATANIA',
     sub: 'Starting and return point.',
-    img: '/lovable-uploads/gibigiana-marina.jpg',
+    img: '/lovable-uploads/cockpit.png',
     note: null,
     noteImg: null,
   },
   {
     name: 'ULYSSES CAVES',
     sub: null,
-    img: '/lovable-uploads/ulysses-caves.jpg',
+    img: '/lovable-uploads/20250811_100821.jpg',
     note: 'Swim & snorkel between volcanic cliffs.',
     noteImg: '/lovable-uploads/Image_2.png',
   },

@@ -11,42 +11,44 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-cream" ref={ref}>
       <div className="container-custom">
+        {/* ── Centered section header ─────────────── */}
+        <div className="text-center mb-12 md:mb-16 reveal">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="gold-rule" />
+            <span className="section-label">Our Story</span>
+            <span className="gold-rule" />
+          </div>
+          <h2 className="text-navy"
+            style={{fontFamily:"'Cormorant Garamond',serif", fontWeight:300, fontSize:'clamp(2rem,4vw,3.2rem)', lineHeight:1.1, textAlign:'center'}}>
+            We Live <em>for the Wind</em>
+          </h2>
+        </div>
+
+        {/* ── Two-column content below ─────────────── */}
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
 
-          {/* ── Images ─────────────────────────────── */}
+          {/* Images */}
           <div className="relative h-[520px] lg:h-[620px] reveal">
-            {/* Main — skipper */}
+            {/* Main — Gibigiana cockpit (no faces) */}
             <div className="absolute top-0 left-0 w-[68%] h-[72%] img-hover rounded-sm overflow-hidden shadow-2xl">
-              <img src="/lovable-uploads/DSC02251.jpg" alt="Saraventu skipper and crew" className="w-full h-full object-cover object-top" />
+              <img src="/lovable-uploads/cockpit.png" alt="Gibigiana cockpit" className="w-full h-full object-cover object-center" />
             </div>
-            {/* Second — helm */}
+            {/* Second — Ulysses caves (no faces) */}
             <div className="absolute bottom-0 right-0 w-[56%] h-[54%] img-hover rounded-sm overflow-hidden shadow-xl border-2 border-white">
-              <img src="/lovable-uploads/DSC02197.jpg" alt="Guest at the helm" className="w-full h-full object-cover object-top" />
+              <img src="/lovable-uploads/20250811_100821.jpg" alt="Sicilian volcanic coast" className="w-full h-full object-cover object-center" />
             </div>
-            {/* Gold rule accent */}
+            {/* Gold decorative accents */}
             <div className="absolute top-[69%] left-[65%] w-12 h-12 border border-[--gold] rounded-full opacity-60" />
             <div className="absolute top-[72%] left-[62%] w-5 h-5 border border-[--gold] rounded-full opacity-40" />
           </div>
 
-          {/* ── Text ───────────────────────────────── */}
+          {/* Text — left aligned within column */}
           <div>
-            <div className="flex items-center gap-3 mb-6 reveal reveal-delay-1">
-              <span className="gold-rule" />
-              <span className="section-label">Our Story</span>
-            </div>
-
-            <h2 className="text-navy mb-6 reveal reveal-delay-1"
-              style={{fontFamily:"'Cormorant Garamond',serif", fontWeight:300, fontSize:'clamp(2rem,4vw,3.2rem)', lineHeight:1.1}}>
-              We Live<br /><em>for the Wind</em>
-            </h2>
-
-            <span className="gold-rule-full mb-8 block reveal reveal-delay-1" />
-
-            <div className="inline-flex items-center gap-2 bg-white border border-[--gold]/30 px-4 py-2 mb-8 reveal reveal-delay-2">
+            <div className="inline-flex items-center gap-2 bg-white border border-[--gold]/30 px-4 py-2 mb-8 reveal reveal-delay-1">
               <span className="text-xs font-lexend tracking-widest uppercase text-[--gold]">Gibigiana · Beneteau Cyclades 43.4 · Catania</span>
             </div>
 
-            <p className="text-[--navy-mid] leading-relaxed mb-5 reveal reveal-delay-2" style={{fontSize:'1.05rem'}}>
+            <p className="text-[--navy-mid] leading-relaxed mb-5 reveal reveal-delay-1" style={{fontSize:'1.05rem'}}>
               Saraventu was founded by two sea lovers with more than 20 years of experience in sailing,
               windsurfing, and water sports. What started as a passion became a mission: to share the
               beauty and freedom of Sicily's sea in a relaxed and authentic way.

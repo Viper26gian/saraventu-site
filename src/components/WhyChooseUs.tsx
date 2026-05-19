@@ -34,16 +34,17 @@ const WhyChooseUs = () => {
     <section id="why-us" className="section-padding bg-navy text-white" ref={ref}>
       <div className="container-custom">
 
-        {/* header */}
-        <div className="max-w-2xl mb-20 reveal">
-          <div className="flex items-center gap-3 mb-6">
+        {/* Centered header */}
+        <div className="text-center mb-16 md:mb-20 reveal max-w-2xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-5">
             <span className="gold-rule" />
             <span className="section-label">Why Saraventu</span>
+            <span className="gold-rule" />
           </div>
           <h2 style={{fontFamily:"'Cormorant Garamond',serif", fontWeight:300, fontSize:'clamp(2rem,4vw,3.2rem)', lineHeight:1.1}}>
-            Not Just Another<br /><em style={{color:'var(--teal-light)'}}>Boat Rental</em>
+            Not Just Another <em style={{color:'var(--teal-light)'}}>Boat Rental</em>
           </h2>
-          <p className="text-white/60 mt-6 max-w-lg leading-relaxed">
+          <p className="text-white/60 mt-6 max-w-lg mx-auto leading-relaxed">
             We craft premium, authentic Sicilian experiences that combine exceptional seamanship
             with insider access to the island's hidden treasures.
           </p>
@@ -69,9 +70,9 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* bottom image strip */}
+        {/* bottom image strip (no faces) */}
         <div className="mt-px grid grid-cols-3 gap-px h-48 overflow-hidden">
-          {['/lovable-uploads/DSC01915.jpg','/lovable-uploads/DSC02399.jpg','/lovable-uploads/Image_1.png'].map((src,i) => (
+          {['/lovable-uploads/20250801_192926.jpg','/lovable-uploads/DSC02399.jpg','/lovable-uploads/Image_1.png'].map((src,i) => (
             <div key={i} className="img-hover overflow-hidden">
               <img src={src} alt="" className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-500" />
             </div>

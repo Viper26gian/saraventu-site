@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import VideoShowcase from '../components/VideoShowcase';
 import CyclopsRoute from '../components/CyclopsRoute';
 import SailingExperiences from '../components/SailingExperiences';
 import OnBoard from '../components/OnBoard';
@@ -71,6 +72,7 @@ const Index = () => {
         <main id="main-content" tabIndex={-1}>
           <Hero />
           <About />
+          <VideoShowcase />
           <CyclopsRoute />
           <SailingExperiences />
           <OnBoard />
